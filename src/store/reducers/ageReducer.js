@@ -1,3 +1,5 @@
+import { AGE_UP, AGE_DOWN, DELETE_ITEM } from '../actions/actionTypes';
+
 const initialState = {
     age: 20,
     history: []
@@ -6,7 +8,7 @@ const initialState = {
 const ageReducer = (state = initialState, action) => {
 
     switch(action.type){
-        case "AGE_UP":
+        case AGE_UP:
             return {
                 ...state,  
                 age: state.age + action.value,
@@ -15,7 +17,7 @@ const ageReducer = (state = initialState, action) => {
                     age: state.age + action.value
                 })
             }
-        case "AGE_DOWN":
+        case AGE_DOWN:
             return {
                 ...state,  
                 age: state.age - action.value,
@@ -24,7 +26,7 @@ const ageReducer = (state = initialState, action) => {
                     age: state.age - action.value
                 })
             }
-        case "DELETE_ITEM":
+        case DELETE_ITEM:
             return {
                 ...state,
                 history: state.history.filter(item => item.id !== action.key)

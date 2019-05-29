@@ -1,3 +1,4 @@
+import { CREATE_TODO, DELETE_TODO } from '../actions/actionTypes';
 import uuidv1 from "uuid";
 
 const initialState = {
@@ -6,7 +7,7 @@ const initialState = {
 
 const todoReducer = (state=initialState, action) => {
     switch(action.type) {
-        case "CREATE_TODO":
+        case CREATE_TODO:
             return {
                 ...state,
                 todos: state.todos.concat({
@@ -14,7 +15,7 @@ const todoReducer = (state=initialState, action) => {
                     id: uuidv1()
                 })
             };
-        case "DELETE_TODO":
+        case DELETE_TODO:
             return {
                 ...state,
                 todos: state.todos.filter(todo => todo.id !== action.todoId)

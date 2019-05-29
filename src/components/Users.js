@@ -7,7 +7,7 @@ const Users = (props) => {
         <div>
             <h3>Users list</h3> 
             <p> Using redux-thunk</p>
-            <ul>
+            <ul style={{listStyle: "none"}}>
                 {
                     props.users.users.map(user => (
                         <li key={user.id}>

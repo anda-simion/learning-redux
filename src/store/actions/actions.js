@@ -1,55 +1,57 @@
+import * as types from './actionTypes';
+
 export const ageUp = (val) => (
     {
-        type:'AGE_UP', 
+        type: types.AGE_UP, 
         value: val
     }
 );
 
 export const ageDown = (val) => (
     {
-        type:'AGE_DOWN', 
+        type: types.AGE_DOWN, 
         value: val
     }
 );
 
 export const deleteItem = (id) => (
     {
-        type: 'DELETE_ITEM',
+        type: types.DELETE_ITEM,
         key: id
     }
 );
 
 export const createToDo = (todoName) => (
     {
-        type: 'CREATE_TODO',
+        type: types.CREATE_TODO,
         todoName: todoName
     }
 );
 
 export const deleteToDo = (todoId) => (
     {
-        type: 'DELETE_TODO',
+        type: types.DELETE_TODO,
         todoId: todoId
     }
 );
 
 export const updateA = (b) => (
     {
-        type: "UPDATE_A",
+        type: types.UPDATE_A,
         valueB: b
     }
 );
 
 export const updateB = (a) => (
     {
-        type: "UPDATE_B",
+        type: types.UPDATE_B,
         valueA: a
     }
 );
 
 export const resetSum = (bool) => (
     {
-        type: "RESET_SUM",
+        type: types.RESET_SUM,
         payload: bool
     }
 );
@@ -60,9 +62,9 @@ export const getUsers = () => {
         .then(res => res.json())
         .then(users => {
           dispatch({
-            type: "GET_USERS",
+            type: types.GET_USERS,
             payload: users
           })
         })
     }
-  }
+};
