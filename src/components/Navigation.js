@@ -19,6 +19,9 @@ const Navigation = () => {
                 <Menu.Item>
                     <NavLink to="/sum">Sum</NavLink>
                 </Menu.Item>
+                <Menu.Item>
+                    <NavLink to="/users">Users</NavLink>
+                </Menu.Item>
             </Menu>
         </div>
     )

@@ -53,3 +53,16 @@ export const resetSum = (bool) => (
         payload: bool
     }
 );
+
+export const getUsers = () => {
+    return (dispatch) => {
+      fetch(`https://jsonplaceholder.typicode.com/users`)
+        .then(res => res.json())
+        .then(users => {
+          dispatch({
+            type: "GET_USERS",
+            payload: users
+          })
+        })
+    }
+  }

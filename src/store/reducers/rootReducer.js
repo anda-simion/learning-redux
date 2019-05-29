@@ -1,13 +1,15 @@
 import { combineReducers } from 'redux';
-import ageReducer from './ageReducer';
-import todoReducer from './todoReducer';
-import sumReducer from './sumReducers';
+import age from './ageReducer';
+import todos from './todoReducer';
+import sum from './sumReducers';
+import users from './usersReducer';
 
 const rootReducer = combineReducers(
     {
-        age: ageReducer,
-        todos: todoReducer,
-        sum: sumReducer
+        age,
+        todos,
+        sum,
+        users
     }
 );
 
