@@ -9,7 +9,7 @@ import Sum from './components/Sum';
 import Users from './components/Users';
 import Navigation from './components/Navigation';
 import { connect } from 'react-redux';
-import { getUsers} from './store/actions/actions';
+import { getUsers} from './redux/actions/actions';
 
 class App extends React.Component {
 

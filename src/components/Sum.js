@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { updateA, updateB, resetSum } from '../store/actions/actions';
+import { updateA, updateB, resetSum } from '../redux/actions/actions';
 
 const Sum = (props) => {
     return (

@@ -9,7 +9,7 @@ const rootReducer = combineReducers(
         age,
         todos,
         sum,
-        users
+        users,
     }
 );
 

@@ -15,3 +15,4 @@ export const UPDATE_B = 'UPDATE_B';
 export const RESET_SUM = 'RESET_SUM';
 
 export const GET_USERS = 'GET_USERS';
+

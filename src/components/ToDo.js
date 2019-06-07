@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createToDo, deleteToDo } from '../store/actions/actions';
+import { createToDo, deleteToDo } from '../redux/actions/actions';
 
 class ToDo extends Component {
     constructor() {

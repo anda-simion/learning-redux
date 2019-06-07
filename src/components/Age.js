@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as actionCreator from '../store/actions/actions';
+import * as actionCreator from '../redux/actions/actions';
 
 const Age = (props) => {
     return (
